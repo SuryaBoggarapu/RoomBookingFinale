@@ -107,7 +107,7 @@
 
     <TextView
         android:id="@+id/tv_equipment_2"
-        android:text="Hardwere Equipment"
+        android:text="Hardware Equipment"
         android:layout_marginTop="14dp"
         android:textColor="#A76464"
         android:layout_marginLeft="15dp"
@@ -118,7 +118,7 @@
     <TextView
         android:id="@+id/tv_equipment_hw"
         android:background="@drawable/edittext_rounded"
-        android:hint="Hardwere Equipment"
+        android:hint="Hardware Equipment"
         android:padding="8dp"
         android:layout_marginTop="4dp"
         android:layout_marginLeft="13dp"
@@ -174,6 +174,7 @@
     <Button
         android:id="@+id/btn_submit"
         android:text="Submit"
+        android:textColor="#ffff"
         android:layout_gravity="right"
         android:layout_margin="15dp"
         android:background="@drawable/button_rounded"
