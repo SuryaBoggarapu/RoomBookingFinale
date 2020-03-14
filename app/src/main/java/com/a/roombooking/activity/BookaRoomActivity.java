@@ -15,6 +15,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
+import android.widget.Spinner;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -54,6 +55,7 @@ public class BookaRoomActivity extends AppCompatActivity {
     ProgressDialog progressDialog;
     SharedPreferences sharedPreferences;
     String session,id;
+    Spinner spin_duration;
     TextView tv_equipment_sw,tv_equipment_hw;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -79,7 +81,9 @@ public class BookaRoomActivity extends AppCompatActivity {
         et_add_capacity=(EditText)findViewById(R.id.et_add_capacity);
         et_equipment=(EditText)findViewById(R.id.et_equipment);
         tv_dob=(TextView)findViewById(R.id.tv_dob);
-        et_duration=(EditText)findViewById(R.id.et_duration);
+        //  et_duration=(EditText)findViewById(R.id.et_duration);
+
+        spin_duration=(Spinner) findViewById(R.id.spin_duration);
         btn_submit=(Button) findViewById(R.id.btn_submit);
 
         et_block_name.setText(getIntent().getStringExtra("bname"));
@@ -128,6 +132,11 @@ public class BookaRoomActivity extends AppCompatActivity {
         btn_submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                if (spin_duration.getSelectedItem().toString().contains("Duration")) {
+                    Toast.makeText(getApplicationContext(), "Select Duration Time", Toast.LENGTH_SHORT).show();
+                    return;
+                }
                 submitData();
                 Intent intent=new Intent(BookaRoomActivity.this,SlashScreenActivity.class);
                 startActivity(intent);
@@ -147,7 +156,7 @@ public class BookaRoomActivity extends AppCompatActivity {
         progressDialog.show();
 
         EndPointUrl service = RetrofitInstance.getRetrofitInstance().create(EndPointUrl.class);
-        Call<ResponseData> call = service.bookMyRoom(getIntent().getStringExtra("id"),session,date,time,date_end,sware,hware,reason_book,other,et_duration.getText().toString());
+        Call<ResponseData> call = service.bookMyRoom(getIntent().getStringExtra("id"),session,date,time,date_end,sware,hware,reason_book,other,spin_duration.getSelectedItem().toString());
         call.enqueue(new Callback<ResponseData>() {
             @Override
             public void onResponse(Call<ResponseData> call, Response<ResponseData> response) {
@@ -298,28 +307,28 @@ public class BookaRoomActivity extends AppCompatActivity {
         }
     }
 
-   public void sofwareServerData() {
-       progressDialog = new ProgressDialog(BookaRoomActivity.this);
-       progressDialog.setMessage("Loading....");
-       progressDialog.show();
+    public void sofwareServerData() {
+        progressDialog = new ProgressDialog(BookaRoomActivity.this);
+        progressDialog.setMessage("Loading....");
+        progressDialog.show();
 
-       EndPointUrl service = RetrofitInstance.getRetrofitInstance().create(EndPointUrl.class);
-       Call<List<ReqPojo>> call = service.get_software();
-       call.enqueue(new Callback<List<ReqPojo>>() {
-           @Override
-           public void onResponse(Call<List<ReqPojo>> call, Response<List<ReqPojo>> response) {
-               progressDialog.dismiss();
-               list_sofraware = response.body();
-               show_software(BookaRoomActivity.this);
-           }
+        EndPointUrl service = RetrofitInstance.getRetrofitInstance().create(EndPointUrl.class);
+        Call<List<ReqPojo>> call = service.get_software();
+        call.enqueue(new Callback<List<ReqPojo>>() {
+            @Override
+            public void onResponse(Call<List<ReqPojo>> call, Response<List<ReqPojo>> response) {
+                progressDialog.dismiss();
+                list_sofraware = response.body();
+                show_software(BookaRoomActivity.this);
+            }
 
-           @Override
-           public void onFailure(Call<List<ReqPojo>> call, Throwable t) {
-               progressDialog.dismiss();
-               Toast.makeText(BookaRoomActivity.this, "Something went wrong...Please try later!", Toast.LENGTH_SHORT).show();
-           }
-       });
-   }
+            @Override
+            public void onFailure(Call<List<ReqPojo>> call, Throwable t) {
+                progressDialog.dismiss();
+                Toast.makeText(BookaRoomActivity.this, "Something went wrong...Please try later!", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
     /**Software End**/
 
     /**hardware Start**/

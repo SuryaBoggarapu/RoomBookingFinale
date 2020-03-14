@@ -78,15 +78,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-   <!-- <Button
-        android:id="@+id/btn_cancle"
-        android:text="Cancle"
-        android:layout_gravity="right"
-        android:layout_margin="15dp"
-        android:background="@drawable/button_rounded"
-        android:layout_width="150dp"
-        android:layout_height="40dp" />
--->
+    <!-- <Button
+         android:id="@+id/btn_cancle"
+         android:text="Cancle"
+         android:layout_gravity="right"
+         android:layout_margin="15dp"
+         android:background="@drawable/button_rounded"
+         android:layout_width="150dp"
+         android:layout_height="40dp" />
+ -->
 
 
 </LinearLayout>

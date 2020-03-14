@@ -42,8 +42,14 @@ public class MyBookedRoomsPojo {
     @SerializedName("end_date")
     private String end_date;
 
+    @SerializedName("reason_for_booking")
+    private String reason_for_booking;
 
-    public MyBookedRoomsPojo(String rname,String bname,String capacity,String hardware,String software,String descrip,String other,String booked_date,String status,String id,String booked_time,String end_date) {
+    @SerializedName("duration")
+    private String duration;
+
+
+    public MyBookedRoomsPojo(String rname,String bname,String capacity,String hardware,String software,String descrip,String other,String booked_date,String status,String id,String booked_time,String end_date,String reason_for_booking,String duration) {
         this.setRname(rname);
         this.setStatus(status);
         this.setBname(bname);
@@ -56,7 +62,25 @@ public class MyBookedRoomsPojo {
         this.setId(id);
         this.setBooked_time(booked_time);
         this.setEnd_date(end_date);
+        this.setreason(reason_for_booking);
+        this.setDuration(duration);
 
+    }
+
+    public String getReason() {
+        return reason_for_booking;
+    }
+
+    public void setreason(String status) {
+        this.reason_for_booking = reason_for_booking;
+    }
+
+    public String getDuration() {
+        return duration;
+    }
+
+    public void setDuration(String status) {
+        this.duration = duration;
     }
 
     public String getStatus() {

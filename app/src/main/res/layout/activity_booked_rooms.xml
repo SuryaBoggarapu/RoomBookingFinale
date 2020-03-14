@@ -264,20 +264,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-
-
-    <EditText
-
-        android:id="@+id/et_duration"
-        android:background="@drawable/edittext_rounded"
-        android:hint="Duration"
-        android:padding="8dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginLeft="13dp"
-        android:layout_marginRight="13dp"
-        android:textColorHint="#C5BFC2"
+    <Spinner
+        android:id="@+id/spin_duration"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_rounded"
+        android:textColorHint="#B68E9C"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="8dp"
+        android:popupBackground="@android:color/white"
+        android:entries="@array/spin_duration"
+        android:scrollbars="none"
+        android:spinnerMode="dropdown" />
+
+<!--    <EditText-->
+
+<!--        android:id="@+id/et_duration"-->
+<!--        android:background="@drawable/edittext_rounded"-->
+<!--        android:hint="Duration"-->
+<!--        android:padding="8dp"-->
+<!--        android:layout_marginTop="4dp"-->
+<!--        android:layout_marginLeft="13dp"-->
+<!--        android:layout_marginRight="13dp"-->
+<!--        android:textColorHint="#C5BFC2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content" />-->
 
 
     <Button

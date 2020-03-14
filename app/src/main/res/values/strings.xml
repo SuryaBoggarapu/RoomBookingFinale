@@ -7,6 +7,19 @@
         <item>Exam</item>
     </string-array>
 
+    <string-array name="spin_duration">
+    <item>Duration</item>
+    <item>1 Hr</item>
+    <item>2 Hrs</item>
+    <item>3 Hrs</item>
+    <item>4 Hrs</item>
+    <item>5 Hrs</item>
+    <item>6 Hrs</item>
+    <item>7 Hrs</item>
+    <item>8 Hrs</item>
+    <item>9 Hrs</item>
+    <item>10 Hrs</item>
+    </string-array>
 
     <string-array name="block_names">
         <item>Select</item>
