@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">RoomBooking</string>
+
+    <string-array name="Book_meet_exam">
+        <item>Select</item>
+        <item>Meeting</item>
+        <item>Exam</item>
+    </string-array>
+
+
+    <string-array name="block_names">
+        <item>Select</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+    </string-array>
+
+    <string name="upload_image">UPLOAD IMAGE</string>
+    <string name="read_file">This app needs access to your file storage so that it can read photos.</string>
+</resources>

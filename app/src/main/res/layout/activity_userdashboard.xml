@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <!--<Button
+        android:id="@+id/btn_edit_profile"
+        android:text="Edit Profile"
+        android:layout_margin="15dp"
+        android:background="@drawable/button1_rounded"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_avalable_rooms"
+        android:text="Avalable Rooms"
+        android:layout_margin="15dp"
+        android:background="@drawable/button1_rounded"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_mybooked_rooms"
+        android:text="My Booked Rooms"
+        android:layout_margin="15dp"
+        android:background="@drawable/button1_rounded"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:text="Logout"
+        android:layout_margin="15dp"
+        android:background="@drawable/button1_rounded"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+
+</LinearLayout>

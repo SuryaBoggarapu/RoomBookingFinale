@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item  android:id="@+id/avalable_rooms"
+        android:visible="false"
+        android:title="Avalable Rooms"/>
+    <item  android:id="@+id/mybooked_rooms"
+        android:title="My Booked Rooms"/>
+    <item  android:id="@+id/edit_profile"
+        android:title="Edit Profile"/>
+    <item  android:id="@+id/logout"
+        android:title="Logout"
+        app:showAsAction="withText"/>
+
+</menu>

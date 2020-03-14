@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_admnlogin"
+        android:text="Admin Login"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#131212"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/button1_rounded" />
+
+
+    <Button
+        android:id="@+id/btn_userlogin"
+        android:text="User Login"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#131212"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/button1_rounded" />
+
+   <!-- <Button
+        android:id="@+id/btn_ansaquestion"
+        android:text="List of Questions"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#131212"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/button1_rounded" />
+
+
+    <Button
+        android:id="@+id/btn_viewans"
+        android:text="View Ansewrs"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#131212"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/button1_rounded" />
+-->
+
+
+
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/circ_image"
+            android:background="@drawable/roombooking"
+            android:layout_width="180dp"
+            android:layout_height="100dp" />
+
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:text="Username"
+        android:textSize="20dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="30dp"
+        android:textColor="#96B0BF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+            <EditText
+                android:id="@+id/et_USERNAME"
+                android:singleLine="true"
+
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+<!--    <View-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_marginLeft="30dp"-->
+<!--        android:layout_marginRight="30dp"-->
+<!--        android:layout_height="2dp"-->
+<!--        android:background="#8E989E"/>-->
+
+
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:text="Password"
+        android:layout_gravity="left"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="23dp"
+        android:textColor="#96B0BF"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+            <EditText
+                android:id="@+id/et_PWD"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+<!--    <View-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_marginLeft="30dp"-->
+<!--        android:layout_marginRight="30dp"-->
+<!--        android:layout_height="2dp"-->
+<!--        android:background="#8E989E"/>-->
+
+    <TextView
+        android:id="@+id/tv_forgetpwd"
+        android:text="Forget Password ?"
+        android:visibility="gone"
+        android:layout_gravity="right"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#96B0BF"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+    <Button
+        android:id="@+id/btn_add"
+        android:text="Login"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#131212"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/button1_rounded" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_newuser"
+            android:text="New User ?"
+            android:textColor="#96B0BF"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/tv_signup"
+            android:text="Sign Up"
+            android:layout_marginLeft="6dp"
+            android:textColor="#7BCA7E"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
